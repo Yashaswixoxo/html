@@ -1,17 +1,51 @@
-body {
-    background-color: pink;
+h1{
+  padding-top:10px 30px ;
+  align-self: baseline;
+  font-size: 100 px;
+  text-align: center;
+  color: pink;
+  font-size:100 px;
+}
+.outercircle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(23, 23, 92);
+    display: flex;
   }
-  h1 {
-    color: antiquewhite;
-    font-family: fantasy;
-    text-align: center;
+  .innercircle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    margin: auto;
+    display: flex;
   }
-  p {
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    font-size: 20 px;
+  .innercircle2 {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color:rgb(31, 31, 126) ;
+    margin: auto;
+    display: flex;
   }
-  hr {
-    width: 20%;
-    color: blue;
+  .innercircle3{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color:black;
+    margin: auto;
   }
+p1{
+  color: pink; 
+  font-weight: bold ;
+  text-align: center;
+  font-size:30px;
+}
+img{
+  width:min-content;
+  border-radius:50% ;
+  height:min-content;
+  float: left;
+  margin-right:10px ;
+}

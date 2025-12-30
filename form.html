@@ -38,6 +38,7 @@
         flex-direction: column;
         align-items: center;
       }
+    
 
       label {
         font-size: 20px;
@@ -74,12 +75,27 @@
         padding: 20px;
         color: rgb(255, 104, 129);
       }
+      
 
       .child1,
       .child2,
       .child3 {
         padding: 10px;
         margin: auto;
+        display: flex;
+        justify-content: space-between;
+        width: 400px;
+      }
+      .child6{
+        padding: 10px;
+        margin:0cqmax ;
+        display: flex;
+        justify-content: space-between;
+        width: 400px;
+      }
+      .child4{
+        padding: 10px;
+        margin:0cqmax ;
         display: flex;
         justify-content: space-between;
         width: 400px;
@@ -98,17 +114,28 @@
             <input type="text" name="name" id="name" />
           </div>
 
+           <div class="child1">GENDER:</div>
+           <div class="child1">
+            <input type="radio" id="male" name="gender" >
+            <label for="male">male</label><br>
+        
+            <input type="radio" id="male" name="gender">
+            <label for="female">female</label><br>
+            </div>
           <div class="child2">
             <label for="password"> Enter the password: </label>
             <input type="password" name="password" id="password" />
             <!-- d and name is same also name should always be there -->
           </div>
-
+          <div class="child4">TELEPHONE  NUMBER : <label for="telephone number "> </label><br>
+            <input type="tel" id="telephone number" name="telephone number" ></div>
+            <div class="child4">START DATE: 
+            <label for="start"></label>
+<input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31" ></div>
           <div class="child3">
             <label for="email"> Enter the email: </label>
             <input type="email" name="email" id="email" />
           </div>
-
           <button type="submit">Submit</button>
         </div>
       </div>

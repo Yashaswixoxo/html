@@ -5,45 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form</title>
     <style>
-        body{
-            background-color: antiquewhite;
-             ;
-            text-align: left;
-
+        h1 {
+        background-color: rgb(245, 156, 171);
+        color: white;
+        text-align:center;
+        padding: 10px;
         }
-        p{
-            background-color: pink;
-            color: white;
-        
-
-            
-        }
-
+        .container {
+        margin-top: auto;
+        height: 100vh;
+        width: 100vw;
+        display: flex; 
+      } 
     </style>
-
 </head>
-
 <body >
-    
-
-<form method="post">
+    <h1> REGISTRARTION FORM </h1>
+    <div class="container">
+ <form method="post" action="/wi.php">
     <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname"><br>
-
+    <input type="text" id="fname" name="fname" placeholder="First name:"><br>
     <label for="lname">Last name:</label><br>
-    <input type="text" id="male" name="gender"><br>
+    <input type="text" id="lname" name="lname"placeholder="last name:"><br>
     <label for="address ">Address:</label><br>
-    <input type="text" id="address" name="address"><br>
-    <p> GENDER  :</p>
+    <input type="text" id="address" name="address"placeholder="Address"><br>
+    <p >  GENDER  :</p>
     <input type="radio" id="male" name="male" >
     <label for="male">male</label><br>
-
     <input type="radio" id="male" name="gender">
     <label for="female">female</label><br>
-
 <p> TELEPHONE NUMBER: </p>
-    <label for="telephone number "> telephone number:</label><br>
-  <input type="tel" id="telephone number" name="telephone number" >
+    <label for="telephone number "> </label><br>
+  <input type="tel" id="telephone number" name="telephone number" placeholder="telephone number" >
  <P> MODE OF TRANSPORATION :</P>
     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
     <label for="vehicle1"> I have a bike</label><br>
@@ -51,9 +44,21 @@
     <label for="vehicle2"> I have a car</label><br>
     <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
     <label for="vehicle3"> I am pedestrian </label>
-  <HR>
-     <input type="submit" value="Submit">
-  </form>
+    <p> faculty :</p>
+    <select name="class">
+        <option value="csit">Bsc.CSIT</option>
+        <option value="bca">BCA</option>
+      
+        <input type="submit"></button><br>
+        <input type="reset" value="Reset">
+        <br>
+        <label for="start">Start date:</label>
+<input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31" >
+  </form> 
+</div>
+  <h1> notice !</h1>
+  <p> for a form with css atributes please go here <a href="/form.html" target="_main"> login</a></p>
+  <textarea name="Feedback" id="101" placeholder=" feedback "></textarea>
+</body> 
 
-</body>
 </html>
